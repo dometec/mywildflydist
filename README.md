@@ -39,4 +39,4 @@ $ ./jboss-cli.sh -c --file=adapter-elytron-install.cli
 
 At this point you can create a docker image:
 
-$ docker build -t dometec/wildfly:23.0.0.Final-Microprofile-Keycloak .
+$ docker build -t dometec/wildfly:23.0.0.Final-Microprofile-Keycloak-Centos9 .

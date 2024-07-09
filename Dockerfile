@@ -1,4 +1,7 @@
-FROM jboss/base-jdk:11
+FROM quay.io/centos/centos:stream9
+
+RUN yum install -y java-11-openjdk-headless.x86_64
+RUN useradd jboss
 
 ENV WILDFLY_VERSION 23.0.0.Final
 ENV JBOSS_HOME /opt/jboss/wildfly
